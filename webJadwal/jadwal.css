@@ -1,0 +1,100 @@
+@font-face {
+    font-family: tenada;
+    src: url(Tenada.ttf);
+  }
+  
+  @font-face {
+    font-family: catfiles;
+    src: url(Catfiles.otf);
+  }
+  
+  @keyframes slideUp {
+    0% {
+        transform: translateY(100%); /* Mulai dari posisi di luar layar bawah */
+    }
+    100% {
+        transform: translateY(0); /* Berhenti di posisi awal */
+    }
+}
+
+body, footer {
+    height: 100vh; /* Tinggi sama dengan tinggi layar pengguna */
+}
+
+body {
+    background-image: url('bkgrnd_2.jpeg'); /* URL gambar latar belakang */
+    background-size: cover; /* Atur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* Pusatkan gambar */
+    background-repeat: no-repeat; /* Hindari pengulangan gambar */
+    margin: 0; /* Hapus margin default */
+    padding: 0; /* Hapus padding default */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tenada;
+  }
+  
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: end;
+    animation: slideUp 2s ease forwards;;
+}
+  
+nav ul li{ 
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+  
+nav ul li a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+  
+nav ul li a:hover{
+    color: #555
+}
+  
+.text {
+    font-family: tenada;
+    text-align: center; /* Pusatkan teks */
+    margin-top: 10px; /* Menggeser teks ke atas sejauh 50px */
+    animation: slideUp 2s ease forwards; /* Animasi slideDown selama 2 detik dengan efek easing dan berhenti setelah selesai */
+}
+    
+
+.text h1{
+    color: #555;
+    animation: slideUp 2s ease forwards; /* Animasi slideDown selama 2 detik dengan efek easing dan berhenti setelah selesai */
+}
+
+span {
+    font-family: catfiles;
+    color: yellow;
+    animation: slideUp 2s ease forwards; /* Animasi slideDown selama 2 detik dengan efek easing dan berhenti setelah selesai */
+}
+
+table {
+    font-family: tenada;
+    color: yellow;
+    width: 60%; /* Lebar tabel */
+    margin: auto;
+    margin-top: 20px; /* Geser tabel ke bawah sejauh 20px */
+    border-collapse: separate; /* Pisahkan batas antara sel */
+    border-spacing: 0; /* Atur jarak antara sel menjadi 0 */
+    animation: slideUp 2s ease forwards; /* Animasi slideDown selama 2 detik dengan efek easing dan berhenti setelah selesai */
+}
+
+
+td, th {
+    border: 1px solid; /* Batas sel dan header */
+    padding: 10px; /* Padding sel */
+    text-align: center; /* Pusatkan teks dalam sel */
+}
